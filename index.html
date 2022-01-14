@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Kashful</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="" />
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="index.html">হোম</a></li>
+            <li><a href="members.html">সদস্যদের তথ্য</a></li>
+            <li><a href="#">অনুদানের হিসাব</a></li>
+            <li><a href="#">আমাদের সম্পর্কে</a></li>
+            <li><a href="#">যোগাযোগ</a></li>
+          </ul>
+          <ul>
+            <li><a href="login.html">লগিন</a></li>
+            <div class="profile" id="profile">
+              <img src="assets//images/logo.png" alt="" />
+              <ul class="profile-navigation">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="my-account.html">আমার হিসাব</a></li>
+                <li><a href="#">Profile</a></li>
+              </ul>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="accounts-in-month">
+        <div class="container">
+          <h2 class="section-heading">মাসের হিসাব</h2>
+          <div class="table-info">
+            <div class="month-name">
+              <p>
+                মাসের নামঃ
+                <select>
+                  <option value="january">জানুয়ারি</option>
+                  <option value="february">ফেব্রুয়ারি</option>
+                  <option value="march">মার্চ</option>
+                  <option value="april">এপ্রিল</option>
+                  <option value="may">মে</option>
+                  <option value="june">জুন</option>
+                  <option value="july">জুলাই</option>
+                  <option value="august">আগষ্ট</option>
+                  <option value="september">সেপ্টেমবর</option>
+                  <option value="october">অক্টোবর</option>
+                  <option value="november">নভেম্বর</option>
+                  <option value="december">ডিসেম্বর</option>
+                </select>
+              </p>
+            </div>
+            <div class="phone-number">
+              <p>জমার পরিমানঃ 2000</p>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ক্র.নং</th>
+                <th>সদস্যের নাম</th>
+                <th>মাসের নাম</th>
+                <th>টাকার পরিমান</th>
+                <th>স্ট্যাটাস</th>
+                <th>পেমেন্টের ধরন</th>
+                <th>একশন</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mushriful Islam</td>
+                <td>Januari</td>
+                <td>100</td>
+                <td class="deposited">জমা দিয়েছেন</td>
+                <td>বিকাশ-SDF5845SDF</td>
+                <td class="action"><button id="deposit" class="btn btn-primary">জমা</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Masud Rana</td>
+                <td>Januari</td>
+                <td>100</td>
+                <td class="not-deposited">জমা দেননি</td>
+                <td>বিকাশ-SDF5845SDF</td>
+                <td class="action"><button id="deposit" class="btn btn-primary">জমা</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Shoriful Islam</td>
+                <td>Januari</td>
+                <td>100</td>
+                <td>100</td>
+                <td>বিকাশ-SDF5845SDF</td>
+                <td class="action"><button id="deposit" class="btn btn-primary">জমা</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Shagir hossain</td>
+                <td>Januari</td>
+                <td>100</td>
+                <td>100</td>
+                <td>বিকাশ-SDF5845SDF</td>
+                <td class="action"><button id="deposit" class="btn btn-primary">জমা</button></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Masum Reza</td>
+                <td>Januari</td>
+                <td>100</td>
+                <td>100</td>
+                <td>বিকাশ-SDF5845SDF</td>
+                <td class="action"><button id="deposit" class="btn btn-primary">জমা</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="deposit-payment-popup">
+            <div class="overlay"></div>
+            <form action="#">
+              <div class="field">
+                <label for="">জমার ধরনঃ</label>
+                <select name="" id="deposit_payment_type">
+                  <option value="in-hand">সরাসরি</option>
+                  <option value="bkash">বিকাশ</option>
+                  <option value="roket">রকেট</option>
+                </select>
+              </div>
+              <div class="field transaction_field">
+                <input type="text" placeholder="Transaction ID" name="transaction_id" />
+              </div>
+              <div class="field">
+                <input type="text" placeholder="টাকার পরিমান" name="amount" />
+              </div>
+              <div class="field submit">
+                <button class="btn btn-primary">জমা</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-left">
+          <p>&copy; 2022 Kashful. All Rights Reserved</p>
+        </div>
+        <div class="footer-right">
+          <p>Social media</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

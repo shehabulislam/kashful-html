@@ -1,0 +1,308 @@
+/*---------------------------
+  Common CSS 
+----------------------------*/
+:root {
+  --main-color: #1c8d73;
+}
+body {
+  margin: 0;
+}
+section {
+  padding: 100px 0;
+  background: #f2f2f2;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+.btn {
+  padding: 7px 20px;
+  outline: none;
+  border: 1px solid var(--main-color);
+  font-size: 15px;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn.btn-primary {
+  background: var(--main-color);
+  color: #fff;
+}
+.btn.btn-outline {
+  background: transparent;
+  color: #222;
+}
+.section-heading {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table td,
+th {
+  border: 1px solid var(--main-color);
+  padding: 7px;
+}
+.table-info {
+  display: flex;
+  justify-content: space-between;
+}
+.table-info p {
+  font-weight: bold;
+}
+.table .action {
+  text-align: center;
+}
+.table-info select,
+select {
+  padding: 6px 8px;
+  background: #fff;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  min-width: 140px;
+}
+/* ------------------------
+  Header CSS
+---------------------------*/
+header {
+  background: #fff;
+}
+header .container {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  padding: 20px 0;
+}
+header .logo img {
+  width: 90px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav > ul {
+  align-items: center;
+}
+nav ul li {
+  /* display: flex; */
+}
+.navigation ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  color: var(--main-color);
+}
+.profile-navigation {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  min-width: 200px;
+  background: #fff;
+}
+nav .profile img {
+  width: 40px;
+  height: 35px;
+  cursor: pointer;
+}
+
+/* ===========================
+    Login Page
+==============================*/
+
+#login .container {
+  display: flex;
+  justify-content: center;
+}
+.login-form {
+  width: 300px;
+  padding: 50px 30px;
+  border: 3px solid var(--main-color);
+  border-radius: 5px;
+  background: #fff;
+}
+.login-form h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 0px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.login-form .field label {
+  display: block;
+}
+.field {
+  margin-bottom: 15px;
+}
+.field label {
+  display: block;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.field.inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.field input {
+  padding: 6px 10px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.login-form .submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ==============================
+  Members page
+=================================*/
+.members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+  grid-gap: 30px;
+}
+.member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px;
+  border-radius: 3px;
+}
+.member-image-info {
+  display: flex;
+}
+.member-image img {
+  width: 100px;
+  height: 90px;
+}
+.member .info {
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.member .info a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.member h3 {
+  margin: 0;
+}
+.member p {
+  margin: 3px 0;
+}
+.member .view-button a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: var(--main-color);
+}
+
+/*============================
+  My account page
+  ==============================*/
+#my-account .section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#my-account .section-heading img {
+  width: 50px;
+  height: 40px;
+  margin-left: 20px;
+}
+.my-account-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.my-account-table td,
+th {
+  border: 1px solid var(--main-color);
+  padding: 7px;
+}
+
+/*==============================
+  Account in month page
+==============================*/
+#accounts-in-month table td {
+  text-align: center;
+}
+.deposit-payment-popup {
+  display: none;
+}
+.deposit-payment-popup form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 300px;
+  padding: 30px;
+}
+.deposit-payment-popup .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0000006b;
+  width: 100%;
+  height: 100%;
+}
+#deposit {
+  cursor: pointer;
+}
+.deposit-payment-popup select {
+  width: 100%;
+}
+.transaction_field {
+  display: none;
+}
+.deposited {
+  background: var(--main-color);
+  color: #fff;
+}
+.not-deposited {
+  background: red;
+  color: #fff;
+}
+
+/* ----------------------------
+  Footer
+------------------------------*/
+footer {
+  background: #fff;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*=================================================================================
+  Media Query 
+==================================================================================*/
+@media screen and (min-width: 1366px) {
+  #login,
+  #my-account,
+  #members,
+  #accounts-in-month {
+    min-height: calc(100vh - 367px);
+  }
+}
